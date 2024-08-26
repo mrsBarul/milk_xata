@@ -1,0 +1,27 @@
+@import '../../../../../app/styles/vars.scss';
+
+.footerItemContainer {
+    width: 100%;
+
+    > div > p {
+        font-family: $font-menu;
+        color: $white-color;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    > div {
+        gap: 12px;
+
+        > div {
+            gap: 24px;
+
+            > p {
+                font-family: $font-menu;
+                color: $white-color;
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+    } 
+}

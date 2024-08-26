@@ -1,0 +1,66 @@
+@import '../../../../app/styles/vars.scss';
+
+.questionsItemContainer {
+    gap: 8px;
+    width: 922px;
+
+    > div {
+        width: 100%;
+        gap: 5px;
+
+        &:nth-child(2) {
+            transition: max-height 0.5s ease, opacity 0.5s ease-in-out;
+            max-height: 0px; 
+            opacity: 0;
+            overflow: hidden;
+        } 
+
+
+        &.openAnswer {
+            max-height: 1000px;
+            opacity: 1;
+        }
+
+        &.closeAnswer {
+            max-height: 0px;
+            opacity: 0;
+        }
+
+        > p {
+            font-family: $font-text;
+            color: $white-color-transparent;
+            width: 850px;
+            font-size: 18px;
+            line-height: 140%;
+        }
+
+        > ul > li {
+            list-style-position: inside;
+            list-style-type: disc;
+            color: $white-color-transparent;
+            width: 850px;
+
+            > span {
+                font-family: $font-text;
+                color: $white-color-transparent;
+                font-size: 18px;
+                line-height: 140%;
+            }
+        }
+
+        > ul:nth-child(1) > li,
+        > ul:nth-child(5) > li {
+            list-style-type: none;
+        }
+    }
+}
+
+.rotated {
+    transition: transform 1s;
+    transform: rotate(45deg);
+}
+
+.reverseRotated {
+    transition: transform 1s;
+    transform: rotate(-90deg);
+}

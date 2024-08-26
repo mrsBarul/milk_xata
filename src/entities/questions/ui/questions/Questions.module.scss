@@ -1,0 +1,10 @@
+@import '../../../../app/styles/vars.scss';
+
+.questionsContainer {
+    width: 1117px;
+    padding: 36px 0px 64px 0px;
+
+    > div {
+        gap: 16px;
+    }
+}

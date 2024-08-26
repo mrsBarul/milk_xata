@@ -1,0 +1,13 @@
+@import '../../../app/styles/vars.scss';
+
+.logoContainer {
+    gap: 12px;
+    
+    > p {
+        font-family: $font-title;
+        font-weight: 600;
+        color: $white-color;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+}

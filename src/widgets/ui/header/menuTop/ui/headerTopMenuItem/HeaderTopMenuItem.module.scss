@@ -1,0 +1,10 @@
+@import '../../../../../../app/styles/vars.scss';
+
+.headerTopMenuItemContainer {
+    > ul > li {
+        color: $white-color;
+        font-family: $font-menu;
+        font-size: 16px;
+        line-height: 120%;
+    }
+}

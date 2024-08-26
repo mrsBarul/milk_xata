@@ -1,0 +1,33 @@
+@import '../../../../app/styles/vars.scss';
+
+.headerContainer {
+    width: 1117px;
+    height: 450px;
+    gap: 30px;
+    background-image: url('../../../../../public/images/logoVector.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    > div {
+        gap: 10px;
+
+        > h1 {
+            font-family: $font-title;
+            color: $white-color;
+            text-align: center;
+            font-size: 58px;
+            line-height: 100%;
+            letter-spacing: 2px;
+        }
+    
+        > p {
+            font-family: $font-text;
+            color: $white-color;
+            text-align: center;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: 0.55px;
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+@import '../../../../../app/styles/vars.scss';
+
+.footerContainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    background-color: $footer-color;
+
+    .footer {
+        height: 100%;
+        width: 1117px;
+    }
+}
