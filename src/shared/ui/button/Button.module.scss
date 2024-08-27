@@ -50,10 +50,10 @@
         height: 50px;
     }
 
-    &.toolkit{
+    &.toolkit {
+        position: relative;
         background-color: transparent;
         color: $white-color;
-        border-bottom: 2px solid $primary-color;
         padding: 12px 8px;
         width: auto;
         height: 44px;

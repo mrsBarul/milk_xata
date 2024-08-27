@@ -7,6 +7,7 @@
     height: 80px;
     background-color: $header-menu-color;
     backdrop-filter: blur(24px);
+    z-index: 2;
 
     .headerTopMenu {
         padding: 20px 0px;

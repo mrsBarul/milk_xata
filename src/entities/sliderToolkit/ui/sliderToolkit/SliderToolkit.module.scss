@@ -10,8 +10,24 @@
         gap: 44px;
 
         &:nth-child(2) {
+            position: relative;
             border-bottom: 1px solid $container-color;
             gap: 44px;
         } 
+
+        .underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            background-color: $primary-color;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+        .active .underline {
+            transform: scaleX(1);
+        }
     }
 }
+
