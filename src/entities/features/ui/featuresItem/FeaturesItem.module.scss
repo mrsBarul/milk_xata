@@ -1,0 +1,17 @@
+@import '../../../../app/styles/vars.scss';
+
+.featuresItemContainer {
+    background-color: $container-color;
+    border-radius: 16px;
+    padding: 28px;
+    width: 356px;
+    height: 156px;
+    gap: 8px;
+
+    > p {
+        font-family: $font-text;
+        color: $white-color-transparent;
+        font-size: 16px;
+        line-height: 125%;
+    }
+}

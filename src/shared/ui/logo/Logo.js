@@ -4,7 +4,7 @@ import styles from './Logo.module.scss'
 const Logo = () => {
     return(
         <Stack className={styles.logoContainer}>
-            <img src={`/images/logoMilkAi.png`} alt="logo"/>
+            <img src={`/images/logoMilkAi.svg`} alt="logo"/>
             <p>MilkPad</p>
         </Stack>
     )

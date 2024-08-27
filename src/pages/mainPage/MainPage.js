@@ -1,3 +1,4 @@
+import Features from '../../entities/features/ui/features/Features';
 import Poster from '../../entities/poster/ui/poster/Poster';
 import Questions from '../../entities/questions/ui/questions/Questions';
 import Stack from '../../shared/ui/stack/Stack';
@@ -11,6 +12,7 @@ const MainPage = () => {
         <Stack justify='justifyStart' className={styles.mainPageContainer} direction="column">
             <HeaderTopMenu/>
             <Header/>
+            <Features/>
             <Poster/>
             <Questions/>
             <Footer/>
