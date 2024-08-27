@@ -1,0 +1,16 @@
+@import '../../../../app/styles/vars.scss';
+
+.sliderCardContainer {
+    gap: 12px;
+
+    > div {
+        gap: 4px;
+
+        > p {
+            font-family: $font-text;
+            color: $white-color-transparent;
+            font-size: 16px;
+            line-height: 125%;
+        }
+    }
+}

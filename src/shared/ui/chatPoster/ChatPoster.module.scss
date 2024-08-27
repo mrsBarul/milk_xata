@@ -1,0 +1,30 @@
+@import '../../../app/styles/vars.scss';
+
+.chatPosterContainer{
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    width: 261px;
+    height: 360px;
+
+    > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $image-hover-color;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.chatPosterContainer:hover .overlay {
+    opacity: 1;
+    pointer-events: auto; 
+}
