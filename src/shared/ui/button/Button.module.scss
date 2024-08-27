@@ -22,6 +22,13 @@
         color: $background-color;
     }
 
+    &.defaultCreate {
+        background-color: $white-color;
+        color: $background-color;
+        width: 250px;
+        gap:10px;
+    }
+
     &.primery {
         background-color: $primary-color;
         color: $white-color;

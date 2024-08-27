@@ -1,0 +1,29 @@
+@import '../../../../app/styles/vars.scss';
+
+
+.posterItemContainer {
+    width: 1117px;
+
+    > div {
+        width: 550px;
+        gap: 32px;
+
+        > img {
+            opacity: 0.6;
+            height: 326px;
+            width: 550px;
+        }
+
+        >div {
+            width: 100%;
+            gap: 8px;
+
+            > p {
+                font-family: $font-text;
+                color: $white-color;
+                font-size: 18px;
+                line-height: 140%;
+            }
+        }
+    }
+}

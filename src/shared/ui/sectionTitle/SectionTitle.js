@@ -1,9 +1,9 @@
 import Stack from "../stack/Stack";
 import styles from './SectionTitle.module.scss'
 
-const SectionTitle = ({ text }) => {
+const SectionTitle = ({ text, justify }) => {
     return(
-        <Stack className={styles.sectionTitleContainer}>
+        <Stack justify={ justify } className={styles.sectionTitleContainer}>
             <h1>
                 {text}
             </h1>
