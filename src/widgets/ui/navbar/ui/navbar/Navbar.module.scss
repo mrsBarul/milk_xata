@@ -1,0 +1,96 @@
+@import '../../../../../app/styles/vars.scss';
+
+.navbarContainer{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 0px 18px;
+    z-index: 2;
+
+    &.navbarContainerOpen{
+        height: 100%;
+        background: $background-color;
+        animation: backgroundFadeIn 0.6s ease-in-out forwards;
+    }
+
+    .navbar{
+        background-color: $header-menu-color;
+        backdrop-filter: blur(24px);
+        padding: 20px 18px;
+        width: 100%;
+        height: 80px;
+
+        &.navbarOpen {
+            background: $background-color;
+            border-bottom: 1px solid $container-color;
+            animation: navbarFadeIn 0.6s ease-in-out forwards;
+        }
+    }
+
+    .containerNavbarItem {
+        width: 100%;
+
+        &.containerNavbarItemClosed {
+            display: none;
+        }
+
+        > div {
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: menuItemFadeIn .4s ease-in-out forwards;
+
+                &:nth-child(1) {
+                    animation-delay: 0.1s;
+                }
+            
+                &:nth-child(2) {
+                    animation-delay: 0.3s;
+                }
+            
+                &:nth-child(3) {
+                    animation-delay: 0.6s;
+                }
+
+                &:nth-child(4) {
+                    animation-delay: 0.9s;
+                }
+
+                &:nth-child(5) {
+                    animation-delay: 1.2s;
+                }
+
+                &:nth-child(6) {
+                    animation-delay: 1.5s;
+                }
+        }
+    }
+}
+
+@keyframes backgroundFadeIn {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: $background-color;
+    }
+}
+
+@keyframes navbarFadeIn {
+    0% {
+        background-color: $header-menu-color;
+    }
+    100% {
+        background-color: $background-color;
+    }
+}
+
+@keyframes menuItemFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
