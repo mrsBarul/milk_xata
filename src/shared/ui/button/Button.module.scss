@@ -47,6 +47,8 @@
     &.transparent {
         background-color: transparent;
         color: $white-color;
+        width: 100%;
+        height: 100%;
     }
 
     &.toolkit {

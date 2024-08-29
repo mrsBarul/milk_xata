@@ -34,10 +34,6 @@
         width: 100%;
         gap: 24px;
         transition: transform 0.7s ease-in-out;
-
-        @include mobile-l {
-            gap: 20px;
-        }
     }
 
     .buttonContainer {

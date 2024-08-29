@@ -1,18 +1,20 @@
-import classNames from 'classnames'
-import styles from './Stack.module.scss'
+import { forwardRef } from 'react';
+import classNames from 'classnames';
+import styles from './Stack.module.scss';
 
-const Stack = ({
+const Stack = forwardRef(({
 	children,
 	className,
-	direction = 'directionRow', //column | row
+	direction = 'directionRow', 
 	justify = 'justifyCenter',
 	align = 'alignCenter',
 	flexWrap = 'flexWrap',
 	max,
 	...rest
-}) => {
+}, ref) => {
 	return (
 		<div
+			ref={ref}
 			className={classNames(styles.flex, className, {
 				[styles.max]: max,
 				[styles[direction]]: direction,
@@ -23,7 +25,7 @@ const Stack = ({
 		>
 			{children}
 		</div>
-	)
-}
+	);
+});
 
-export default Stack
+export default Stack;

@@ -11,7 +11,9 @@ const SliderToolkitItem = ({ toolkitItem }) => {
                 <p>{toolkitItem.title}</p>
                 <Title text={toolkitItem.header}/>
                 <p>{toolkitItem.description}</p>
-                <Button variant="primery">{'Get Started'}</Button>
+                <Button variant="primery">
+                    <a href="https://t.me/MilkPadBot" target="_blanck">Get Started</a>
+                </Button>
             </Stack>
             <Stack>
                 <img src={`/images/${toolkitItem.poster_one}.png`} alt="skins poster"/>

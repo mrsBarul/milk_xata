@@ -16,7 +16,7 @@ const HeaderTopMenu = () => {
                     ))}
                 </Stack>
                 <Button variant="default">
-                    {'Lounch App'}
+                <a href="https://t.me/MilkPadBot" target="_blanck">Lounch App</a>
                 </Button>
             </Stack>
         </Stack>

@@ -13,7 +13,7 @@ const PosterItem = () => {
                 </Stack>
                 <Button variant="defaultCreate">
                     <img src={`/images/magicPen.png`} alt="magic pen"/>
-                    {'Create Ai Companion'}
+                    <a href="https://t.me/MilkPadBot" target="_blanck">Create Ai Companion</a>
                 </Button>
             </Stack>
             <Stack>

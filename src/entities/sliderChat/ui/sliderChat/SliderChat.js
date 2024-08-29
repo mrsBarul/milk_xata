@@ -4,52 +4,49 @@ import Stack from "../../../../shared/ui/stack/Stack";
 import styles from './SliderChat.module.scss';
 import dataChat from '../../lib/data';
 import SliderCard from "../sliderCard/SliderCard";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import useWindowSize from "../../../../shared/hooks/useWindowSize";
 
 const SliderChat = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemsPerPage, setItemsPerPage] = useState(4); 
-    const [gap, setGap] = useState(20)
+    const gap = 24;
     const { width } = useWindowSize(); 
-
-    const itemWidth = (100 / itemsPerPage - 1);
-
+    const carouselRef = useRef(null);
 
     const totalItems = dataChat.length;
     const maxIndex = Math.ceil(totalItems / itemsPerPage) - 1;
 
-    console.log(maxIndex)
-
     useEffect(() => {
         if (width <= 590) {
-            setItemsPerPage(1)
-            setGap(26)
+            setItemsPerPage(1);
         } else if (width <= 820) {
-            setItemsPerPage(2)
-            setGap(20)
+            setItemsPerPage(2);
         } else if (width <= 1024) {
-            setItemsPerPage(2)
-            setGap(25)
+            setItemsPerPage(2);
         } else {
-            setItemsPerPage(4)
-            setGap(24)
+            setItemsPerPage(4);
         }
     }, [width]);
 
     const handleNext = () => {
-        if (currentIndex < maxIndex) {
+        if (carouselRef.current && currentIndex < maxIndex) {
+            const totalGapWidth = gap * (itemsPerPage - 1);
+            const itemWidth = (carouselRef.current.offsetWidth - totalGapWidth) / itemsPerPage;
+            carouselRef.current.scrollBy({ left: (itemWidth + gap) * itemsPerPage, behavior: 'smooth' });
             setCurrentIndex(currentIndex + 1);
         }
     };
 
     const handlePrev = () => {
-        if (currentIndex > 0) {
+        if (carouselRef.current && currentIndex > 0) {
+            const totalGapWidth = gap * (itemsPerPage - 1);
+            const itemWidth = (carouselRef.current.offsetWidth - totalGapWidth) / itemsPerPage;
+            carouselRef.current.scrollBy({ left: -((itemWidth + gap) * itemsPerPage), behavior: 'smooth' });
             setCurrentIndex(currentIndex - 1);
         }
     };
-    const translateX = (-(currentIndex * (itemWidth + (gap / width * 100)))) * itemsPerPage;
 
     return(
         <Stack id="Chats"  direction="column" className={styles.slaiderChatContainer}>
@@ -80,9 +77,10 @@ const SliderChat = () => {
                     </Button>
                 </Stack>
             </Stack>
-            <Stack justify="justifyStart" align="alignStart" 
+            <Stack ref={carouselRef}
+            justify="justifyStart" align="alignStart" 
             className={styles.sliderTrack}
-            style={{ transform: `translateX(${translateX}%)` }}>
+            style={{ overflowX: 'hidden', display: 'flex' }}>
                 {dataChat.map((chatCard, key) => (
                     <SliderCard key={key} chatCard={chatCard}/>
                 ))}

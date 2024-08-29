@@ -11,7 +11,7 @@ const SliderCard = ({ chatCard }) => {
                 <img src={`/images/${chatCard.title}.png`} alt="poster of the chat on MilkPad"/>
                 <Stack className={styles.overlay}>
                     <Button variant="transparent">
-                        {'Lounch App'}
+                        <a href="https://t.me/MilkPadBot" target="_blanck">Lounch App</a>
                     </Button>
                 </Stack>
             </Stack>
