@@ -1,7 +1,12 @@
 @import '../../../app/styles/vars.scss';
+@import '../../../app/styles/media-queries.scss';
 
 .logoContainer {
     gap: 12px;
+
+    @include mobile-m {
+        gap: 8px;
+    }
     
     > p {
         font-family: $font-title;
@@ -9,5 +14,9 @@
         color: $white-color;
         font-size: 22px;
         letter-spacing: 1px;
+
+        @include responsive($mobile-m) {
+            
+        }
     }
 }

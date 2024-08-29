@@ -3,10 +3,9 @@ import styles from './NavbarItem.module.scss'
 
 const NavbarItem = ({ navbarItem }) => {
     return(
-        <Stack className={styles.navbarItemContainer} 
-        align="alignStart">
+        <Stack className={styles.navbarItemContainer}>
             <ul>
-                <a href="fghf">{ navbarItem }</a>
+                <a href={navbarItem.link}>{ navbarItem.title }</a>
             </ul>
         </Stack>
     )

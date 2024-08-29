@@ -17,7 +17,7 @@ const SliderToolkit = () => {
     const activeData = dataToolkit.find(item => item.title === activeTab);
 
     return (
-        <Stack className={styles.sliderToolkitContainer} direction="column"> 
+        <Stack id="Toolkit"  className={styles.sliderToolkitContainer} direction="column"> 
             <SectionTitle text={`Milkapad's Toolkit`} />
             <Stack className={styles.buttonContainer} justify="justifyStart">
                 <Button 

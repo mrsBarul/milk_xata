@@ -1,17 +1,52 @@
 @import '../../../../app/styles/vars.scss';
+@import '../../../../app/styles/media-queries.scss';
 
 .sliderToolkitContainer {
     width: 100%;
     gap: 24px;
 
+    @include tablet-m {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
     > div {
+        flex: 1;
         width: 100%;
+
+        &:nth-child(1) {
+            @include mobile-m {
+                > button:nth-of-type(1) {
+                    align-self: center;
+                }
+            }
+        }
 
         &:nth-child(2) {
             background-color: $container-color;
             border-radius: 16px;
             padding: 16px;
             height: 313px;
+
+            @include tablet-l {
+                height: 226px;
+                align-self: flex-start;
+            }
+
+            @include tablet-m {
+                width: 590px;
+                height: 200px;
+            }
+
+            @include mobile-l {
+                width: 335px;
+                height: 200px;
+            }
+
+            > img {
+                width: 50%;
+            }
         } 
 
         > p:nth-of-type(1) {

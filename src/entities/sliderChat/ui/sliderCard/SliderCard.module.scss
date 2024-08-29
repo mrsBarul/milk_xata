@@ -1,7 +1,25 @@
 @import '../../../../app/styles/vars.scss';
+@import '../../../../app/styles/media-queries.scss';
 
 .sliderCardContainer {
     gap: 12px;
+
+    @include tablet-l {
+        width: 800px;
+    }
+
+    @include tablet-m {
+        width: 590px;
+    }
+
+    @include mobile-l {
+        width: 335px;
+    }
+
+    @include mobile-m {
+        width: 300px;
+    }
+
 
     &:hover .overlay {
         opacity: 1;
@@ -14,6 +32,25 @@
         border-radius: 16px;
         width: 261px;
         height: 360px;
+            
+        @include tablet-l {
+            width: 388px;
+            height: 460px;
+        }
+
+        @include tablet-m {
+            width: 300px;
+            height: 400px;
+        }
+
+        @include mobile-l {
+            width: 335px;
+        }
+
+        @include mobile-m {
+            width: 300px;
+        }
+
     
         > img {
             width: 100%;

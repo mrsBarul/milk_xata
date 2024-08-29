@@ -20,6 +20,11 @@
     &.default {
         background-color: $white-color;
         color: $background-color;
+
+        @include responsive($mobile-m) {
+            width: 120px;
+            font-size: 14px;
+        }
     }
 
     &.defaultCreate {
@@ -44,12 +49,6 @@
         color: $white-color;
     }
 
-    &.allow {
-        background-color: transparent;
-        width: 50px;
-        height: 50px;
-    }
-
     &.toolkit {
         position: relative;
         background-color: transparent;
@@ -58,6 +57,19 @@
         width: auto;
         height: 44px;
         border-radius: 0;
+    }
+
+    &.allow {
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+    }
+
+    &.menu {
+        background-color: transparent;
+        padding: 0;
+        width: 40px;
+        height: 40px;
     }
 }
 

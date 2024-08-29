@@ -4,7 +4,7 @@ import styles from './Poster.module.scss'
 
 const Poster = () => {
     return(
-        <Stack className={styles.posterContainer}>
+        <Stack id="Create"  className={styles.posterContainer}>
             <Stack>
                 <PosterItem/>
             </Stack>

@@ -1,20 +1,48 @@
 @import '../../../../../app/styles/vars.scss';
+@import '../../../../../app/styles/media-queries.scss';
 
 .footerItemContainer {
     width: 100%;
+
+    @include tablet-l {
+        width: 800px; 
+    }
+
+    @include tablet-m {
+        width: 590px;
+    }
+
+    @include mobile-l {
+        display: flex;
+        flex-direction: column;
+        width: 335px; 
+    }
+
+    @include mobile-m {
+        width: 300px; 
+    }
 
     > div > p {
         font-family: $font-menu;
         color: $white-color;
         font-size: 16px;
         line-height: 140%;
+        padding-bottom: 12px;
     }
 
     > div {
         gap: 12px;
 
         > div {
-            gap: 24px;
+            gap: 12px;
+
+            @include mobile-l {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
             > p {
                 font-family: $font-menu;

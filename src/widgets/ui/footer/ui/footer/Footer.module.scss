@@ -1,4 +1,5 @@
 @import '../../../../../app/styles/vars.scss';
+@import '../../../../../app/styles/media-queries.scss';
 
 .footerContainer {
     width: 100%;
@@ -6,8 +7,29 @@
     height: 100px;
     background-color: $footer-color;
 
+    @include mobile-l {
+        height: 182px;
+    }
+
     .footer {
         height: 100%;
         width: 1117px;
+
+        @include tablet-l {
+            width: 800px; 
+        }
+    
+        @include tablet-m {
+            width: 590px;
+        }
+    
+        @include mobile-l {
+            height: 182px;
+            width: 335px; 
+        }
+    
+        @include mobile-m {
+            width: 300px; 
+        }
     }
 }

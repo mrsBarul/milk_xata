@@ -1,4 +1,5 @@
 @import '../../../../app/styles/vars.scss';
+@import '../../../../app/styles/media-queries.scss';
 
 .posterContainer{
     width: 100%;
@@ -10,5 +11,14 @@
         background-image: url('../../../../../public/images/poster.png');
         background-size: cover; 
         background-position: center;
+
+        @include tablet-m {
+            height: 400px;
+        }
+
+        @include mobile-l {
+            height: 560px;
+            overflow: hidden;
+        }
     }
 }

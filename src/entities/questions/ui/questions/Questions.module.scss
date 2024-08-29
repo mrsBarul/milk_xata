@@ -1,9 +1,26 @@
 @import '../../../../app/styles/vars.scss';
+@import '../../../../app/styles/media-queries.scss';
 
 .questionsContainer {
     width: 1117px;
     padding: 36px 0px 64px 0px;
     gap: 24px;
+
+    @include tablet-l {
+        width: 800px; 
+    }
+
+    @include tablet-m {
+        width: 590px;
+    }
+
+    @include mobile-l {
+        width: 335px; 
+    }
+
+    @include mobile-m {
+        width: 300px; 
+    }
 
     > div {
         gap: 16px;

@@ -1,8 +1,35 @@
+@import '../../../../app/styles/media-queries.scss';
+
 .featuresContainer {
     width: 1117px;
     padding: 12px 0px 64px 0px;
 
+    @include tablet-l {
+        width: 800px; 
+    }
+
+    @include tablet-m {
+        width: 590px;
+    }
+
+    @include mobile-l {
+        display: flex;
+        flex-direction: column;
+        width: 335px; 
+    }
+
+    @include mobile-m {
+        width: 300px; 
+    }
+
     > div {
         width: 100%;
+        gap: 24px;
+
+
+        @include mobile-l {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

@@ -5,7 +5,7 @@ import FeaturesItem from "../featuresItem/FeaturesItem";
 
 const Features = () => {
     return(
-        <Stack className={styles.featuresContainer}>
+        <Stack id="Features" className={styles.featuresContainer}>
             <Stack justify="justifyBetween">
                 {dataFeatures.map((features, key) => (
                     <FeaturesItem key={key} features={features}/>

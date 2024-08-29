@@ -1,17 +1,75 @@
 @import '../../../../app/styles/vars.scss';
+@import '../../../../app/styles/media-queries.scss';
 
 
 .posterItemContainer {
     width: 1117px;
 
+
+    @include tablet-l {
+        width: 800px; 
+    }
+
+    @include tablet-m {
+        width: 590px;
+    }
+
+    @include mobile-l {
+        display: flex;
+        flex-direction: column;
+        width: 335px; 
+    }
+
+    @include mobile-m {
+        width: 300px; 
+    }
+
     > div {
         width: 550px;
         gap: 32px;
+
+
+        @include tablet-l {
+            width: 400px; 
+            height: 300px;
+        }
+
+        @include mobile-l{
+            width: 335px;
+
+        > div:nth-child(1) {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+            > button {
+                align-self: center;
+            }
+        }
+
 
         > img {
             opacity: 0.6;
             height: 326px;
             width: 550px;
+
+            @include tablet-l {
+                width: 365px; 
+                height: 280px;
+                margin-bottom: -50px;
+            }
+
+            @include tablet-m {
+                width: 365px; 
+                height: 280px;
+                margin-bottom: -120px;
+            }
+
+            @include mobile-l {
+                width: 365px; 
+                height: 260px;
+                margin-bottom: -50px;
+            }
         }
 
         >div {
@@ -23,6 +81,10 @@
                 color: $white-color;
                 font-size: 18px;
                 line-height: 140%;
+
+                @include mobile-l {
+                    text-align: center;
+                }
             }
         }
     }

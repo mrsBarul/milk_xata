@@ -6,7 +6,7 @@ import dataQuestion from '../../lib/data'
 
 const Questions = () => {
     return(
-        <Stack className={styles.questionsContainer} direction="column">
+        <Stack id="FAQ"  className={styles.questionsContainer} direction="column">
             <SectionTitle text={'Frequently Asked Questions'}/>
             <Stack direction="column">
                 {dataQuestion.map((question, key) => (

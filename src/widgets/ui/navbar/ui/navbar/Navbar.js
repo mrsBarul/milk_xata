@@ -23,7 +23,7 @@ const Navbar = () => {
                 <Button variant="default">
                     {'Lounch App'}
                 </Button>
-                <Button onClick={handleMenuClick} variant="transparent">
+                <Button onClick={handleMenuClick} variant="menu">
                     <img src={isOpen ? '/images/closeMenu.svg' : '/images/openMenu.svg'} alt="button's menu"/>
                 </Button>
             </Stack>

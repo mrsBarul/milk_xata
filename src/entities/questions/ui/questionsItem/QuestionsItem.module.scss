@@ -1,9 +1,27 @@
 @import '../../../../app/styles/vars.scss';
+@import '../../../../app/styles/media-queries.scss';
 
 .questionsItemContainer {
     cursor: pointer;
     gap: 8px;
     width: 922px;
+
+    @include tablet-l {
+        width: 800px; 
+    }
+
+    @include tablet-m {
+        width: 590px;
+    }
+
+    @include mobile-l {
+        gap: 12px;
+        width: 335px; 
+    }
+
+    @include mobile-m {
+        width: 300px; 
+    }
 
     > div {
         width: 100%;
@@ -33,6 +51,23 @@
             width: 850px;
             font-size: 18px;
             line-height: 140%;
+
+        
+            @include tablet-l {
+                width: 700px;
+            }
+
+            @include tablet-m {
+                width: 620px;
+            }
+        
+            @include mobile-l {
+                width: 300px;
+            }
+        
+            @include mobile-m {
+                width: 200px;
+            }
         }
 
         > ul > li {
@@ -40,6 +75,22 @@
             list-style-type: disc;
             color: $white-color-transparent;
             width: 850px;
+
+            @include tablet-l {
+                width: 800px; 
+            }
+        
+            @include tablet-m {
+                width: 590px;
+            }
+        
+            @include mobile-l {
+                width: 335px; 
+            }
+        
+            @include mobile-m {
+                width: 300px; 
+            }
 
             > span {
                 font-family: $font-text;

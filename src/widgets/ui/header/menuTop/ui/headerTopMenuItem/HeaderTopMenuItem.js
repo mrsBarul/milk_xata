@@ -5,7 +5,7 @@ const HeaderTopMenuItem = ({ menuItem }) => {
     return(
         <Stack className={styles.headerTopMenuItemContainer}>
             <ul>
-                <li>{ menuItem }</li>
+                <a href={menuItem.link}>{ menuItem.title }</a>
             </ul>
         </Stack>
     )
