@@ -24,7 +24,7 @@ const MainPage = () => {
             <HeaderTopMenu/>} 
             <Header/>
             <SliderChat/>
-            <Features/>
+            <Features />
             <SliderToolkit/> 
             <Poster/>
             <Questions/>

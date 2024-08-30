@@ -49,7 +49,7 @@ const SliderChat = () => {
     };
 
     return(
-        <Stack id="Chats"  direction="column" className={styles.slaiderChatContainer}>
+        <Stack id="Home"  direction="column" className={styles.slaiderChatContainer}>
             <Stack justify="justifyBetween">
                 <SectionTitle justify={width <= 590 ? "justifyCenter" : "justifyStart"} text={'Chat on Milkapad'}/>
                 <Stack className={`${styles.buttonContainer} ${width <= 590 ? styles.containerNone : ''}`}>

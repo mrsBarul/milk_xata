@@ -5,7 +5,7 @@ const data = [
     },
     {
         title: 'Chats',
-        link: '#Chats'
+        link: '#Home'
     },
     {
         title: 'Features',
