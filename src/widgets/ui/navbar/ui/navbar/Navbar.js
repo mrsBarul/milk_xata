@@ -31,7 +31,7 @@ const Navbar = () => {
                 <Stack className={`${styles.containerNavbarItem} ${isOpen ? '' : styles.containerNavbarItemClosed}`} 
                 direction="column">
                     {dataNavbar.map((navbarItem, key) => (
-                        <NavbarItem key={key} navbarItem={navbarItem}/>
+                        <NavbarItem key={key} navbarItem={navbarItem} handleMenuClick={handleMenuClick}/>
                     ))}
                 </Stack>
             </Stack>
