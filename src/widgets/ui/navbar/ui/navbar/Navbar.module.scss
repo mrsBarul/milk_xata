@@ -9,13 +9,31 @@
     height: 80px;
     z-index: 2;
 
+    > div {
+        width: 800px;
+    
+        @include tablet-m {
+            width: 590px;
+        }
+    
+        @include mobile-l {
+            width: 375px;
+        }
+    
+        @include mobile-m {
+            width: 300px;
+        }
+    }
+
+
+
     &.navbarContainerOpen{
         height: 100%;
         animation: backgroundFadeIn 0.2s ease-in-out forwards;
     }
 
     .navbar{
-        padding: 20px 40px;
+        padding: 20px 0px;
         width: 100%;
         height: 80px;
 

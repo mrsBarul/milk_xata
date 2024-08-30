@@ -4,11 +4,16 @@ import Stack from "../../../../shared/ui/stack/Stack";
 import styles from './PosterItem.module.scss'
 
 const PosterItem = () => {
+
+
     return(
         <Stack className={styles.posterItemContainer} justify="justifyBetween">
             <Stack direction="column" align="alignStart">
                 <Stack direction="column" align="alignStart">
-                    <SectionTitle justify={"justifyStart"}  text={'Create your own AI Companion'}/>
+                    <SectionTitle 
+                        justify={"justifyStart"}  
+                        text={'Create your own AI Companion'}
+                    />
                     <p>Meet your new AI companion! Customize your companion’s appearance and personality to your liking, and watch her come to life.</p>
                 </Stack>
                 <Button variant="defaultCreate">

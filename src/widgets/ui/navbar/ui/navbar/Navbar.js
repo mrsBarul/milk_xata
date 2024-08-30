@@ -17,21 +17,23 @@ const Navbar = () => {
     return(
         <Stack direction="column" justify="justifyStart"
         className={`${styles.navbarContainer} ${isOpen ? styles.navbarContainerOpen : ''}`}>
-            <Stack justify="justifyBetween"
-            className={`${styles.navbar} ${isOpen ? styles.navbarOpen : ''}`}>
-                <Logo/>
-                <Button variant="default">
-                    <a href="https://t.me/MilkPadBot" target="_blanck">Lounch App</a>
-                </Button>
-                <Button onClick={handleMenuClick} variant="menu">
-                    <img src={isOpen ? '/images/closeMenu.svg' : '/images/openMenu.svg'} alt="button's menu"/>
-                </Button>
-            </Stack>
-            <Stack className={`${styles.containerNavbarItem} ${isOpen ? '' : styles.containerNavbarItemClosed}`} 
-            direction="column">
-                {dataNavbar.map((navbarItem, key) => (
-                    <NavbarItem key={key} navbarItem={navbarItem}/>
-                ))}
+            <Stack direction='column'>
+                <Stack justify="justifyBetween"
+                className={`${styles.navbar} ${isOpen ? styles.navbarOpen : ''}`}>
+                    <Logo/>
+                    <Button variant="default">
+                        <a href="https://t.me/MilkPadBot" target="_blanck">Lounch App</a>
+                    </Button>
+                    <Button onClick={handleMenuClick} variant="menu">
+                        <img src={isOpen ? '/images/closeMenu.svg' : '/images/openMenu.svg'} alt="button's menu"/>
+                    </Button>
+                </Stack>
+                <Stack className={`${styles.containerNavbarItem} ${isOpen ? '' : styles.containerNavbarItemClosed}`} 
+                direction="column">
+                    {dataNavbar.map((navbarItem, key) => (
+                        <NavbarItem key={key} navbarItem={navbarItem}/>
+                    ))}
+                </Stack>
             </Stack>
         </Stack>
     )
