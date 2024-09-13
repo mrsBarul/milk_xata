@@ -8,10 +8,10 @@ const SliderCard = ({ chatCard }) => {
         <Stack className={styles.sliderCardContainer}
         direction="column">
             <Stack className={styles.chatPosterContainer}>
-                <img src={`/images/${chatCard.title}.png`} alt="poster of the chat on MilkPad"/>
+                <img src={`/images/${chatCard.title}.png`} loading="lazy" alt="poster of the chat on PlayLife"/>
                 <Stack className={styles.overlay}>
                     <Button variant="transparent">
-                        <a href="https://t.me/MilkPadBot" target="_blanck">Lounch App</a>
+                        <a href="https://t.me/PlayLifeBot" target="_blanck">Lounch App</a>
                     </Button>
                 </Stack>
             </Stack>

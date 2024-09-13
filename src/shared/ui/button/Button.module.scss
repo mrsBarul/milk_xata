@@ -21,6 +21,10 @@
         background-color: $white-color;
         color: $background-color;
 
+        &:hover {
+            color: $primary-color;
+        }
+
         @include responsive($mobile-m) {
             width: 120px;
             font-size: 14px;

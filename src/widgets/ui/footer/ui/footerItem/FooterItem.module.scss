@@ -19,8 +19,8 @@
     }
 
     @include mobile-m {
-        width: 300px; 
-    }
+        width: 320px; 
+    }   
 
     > div > p {
         font-family: $font-menu;
@@ -44,7 +44,7 @@
                 align-items: center;
             }
 
-            > p {
+            > a, p {
                 font-family: $font-menu;
                 color: $white-color;
                 font-size: 16px;

@@ -14,22 +14,23 @@ import styles from './MainPage.module.scss';
 const MainPage = () => {
 
     const screenSize = useWindowSize();
-    console.log(screenSize.width)
     const tabletM = 1070;
 
 
     return(
-        <Stack justify='justifyStart' className={styles.mainPageContainer} direction="column">
-            {(screenSize.width) <= tabletM ? <Navbar/> : 
-            <HeaderTopMenu/>} 
-            <Header/>
-            <SliderChat/>
-            <Features />
-            <SliderToolkit/> 
-            <Poster/>
-            <Questions/>
-            <Footer/> 
-        </Stack>
+        <main>
+            <Stack justify='justifyStart' className={styles.mainPageContainer} direction="column">
+                {(screenSize.width) <= tabletM ? <Navbar/> : 
+                <HeaderTopMenu/>} 
+                <Header/>
+                <SliderChat/>
+                <Features />
+                <SliderToolkit/> 
+                <Poster/>
+                <Questions/>
+                <Footer/> 
+            </Stack>
+        </main>
     )
 }
 

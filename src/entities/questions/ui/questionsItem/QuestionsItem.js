@@ -21,6 +21,7 @@ const QuestionsItem = ({ question, isFirst }) => {
                 <Button variant="openQuestion">
                 <img
                         src={`/images/openQuestion.svg`}
+                        loading="lazy"
                         alt="open questions"
                         className={isOpen ? styles.rotated : styles.reverseRotated}
                     />

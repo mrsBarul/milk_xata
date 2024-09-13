@@ -4,15 +4,13 @@
 
 .posterItemContainer {
     width: 1117px;
+    height: 100%;
 
 
     @include tablet-l {
         width: 800px; 
     }
 
-    @include tablet-m {
-        width: 590px;
-    }
 
     @include mobile-l {
         display: flex;
@@ -21,7 +19,7 @@
     }
 
     @include mobile-m {
-        width: 300px; 
+        width: 320px; 
     }
 
 
@@ -43,6 +41,10 @@
             text-align: center;
         }
 
+        @include mobile-m {
+            width: 300px; 
+        }
+
             > button {
                 align-self: center;
             }
@@ -53,18 +55,12 @@
         > img {
             opacity: 0.6;
             height: 326px;
-            width: 550px;
+            width: 530px;
 
             @include tablet-l {
-                width: 365px; 
+                width: 400px; 
                 height: 280px;
                 margin-bottom: -50px;
-            }
-
-            @include tablet-m {
-                width: 365px; 
-                height: 280px;
-                margin-bottom: -120px;
             }
 
             @include mobile-l {
@@ -91,6 +87,32 @@
             }
         }
     }
+}
 
+.posterItemAlternativeContainer {
+    width: 590px;
+    height: 100%;
+    gap: 50px;
+
+    > div {
+        > div {
+            gap: 30px;
+            > img {
+                opacity: 0.6;
+                width: 330px; 
+                height: 240px;
+                margin-bottom: -60px;
+            }
+
+            > div {
+                > p {
+                    font-family: $font-text;
+                    color: $white-color;
+                    font-size: 18px;
+                    line-height: 140%;
+                }
+            }
+        }
+    }
 }
 

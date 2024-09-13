@@ -44,6 +44,10 @@
                 height: 200px;
             }
 
+            @include mobile-m {
+                width: 300px; 
+            }
+
             > img {
                 width: 50%;
             }

@@ -18,6 +18,10 @@
         height: 156px;
     }
 
+    @include mobile-m {
+        width: 300px; 
+    }
+
     > p {
         font-family: $font-text;
         color: $white-color-transparent;

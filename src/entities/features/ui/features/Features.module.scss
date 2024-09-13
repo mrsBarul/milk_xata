@@ -15,13 +15,13 @@
     @include mobile-l {
         display: flex;
         flex-direction: column;
+        padding: 36px 0px 34px 0px;
         width: 335px; 
     }
 
     @include mobile-m {
-        width: 300px; 
+        width: 320px; 
     }
-
     > div {
         width: 100%;
         gap: 24px;

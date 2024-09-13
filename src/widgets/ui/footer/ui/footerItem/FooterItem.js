@@ -5,15 +5,15 @@ const FooterItem = () => {
     return(
         <Stack justify="justifyBetween" className={styles.footerItemContainer}>
             <Stack>
-                <p>Copyright © 2024, MilkPad.</p>
+                <p>Copyright © 2024, PlayLife.</p>
             </Stack>
             <Stack direction="column" align="alignEnd">
                 <Stack>
-                    <p>Terms of Service</p>
-                    <p>Privacy Policy</p>
+                    <a href="/terms_of_service" target="_blank">Terms of Service</a>
+                    <a href="/privacy_policy" target="_blank">Privacy Policy</a>
                 </Stack>
                 <Stack>
-                    <p>support@milkpad.ai</p>
+                    <p>support@PlayLife.ai</p>
                 </Stack>
             </Stack>
         </Stack>

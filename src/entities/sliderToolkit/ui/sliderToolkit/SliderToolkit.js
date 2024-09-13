@@ -18,7 +18,7 @@ const SliderToolkit = () => {
 
     return (
         <Stack id="Toolkit"  className={styles.sliderToolkitContainer} direction="column"> 
-            <SectionTitle text={`Milkapad's Toolkit`} />
+            <SectionTitle text={`PlayLife's Toolkit`} />
             <Stack className={styles.buttonContainer} justify="justifyStart">
                 <Button 
                     variant="toolkit" 

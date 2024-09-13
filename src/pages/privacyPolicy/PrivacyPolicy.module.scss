@@ -1,0 +1,30 @@
+@import '../../app/styles/vars';
+
+.privacyPolicyContainer {
+    background-color: $background-color;
+    color: $white-color-transparent;
+    padding: 10px 100px 100px 100px;
+    gap: 30px;
+
+    h1, h3 {
+        color: $white-color;
+        padding: 30px;
+        font-family: $font-title;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p, li {
+        font-family: $font-menu;
+        font-size: 20px;
+    }
+
+    
+    ol {
+        list-style-type: decimal; 
+        list-style-position: inside;
+        padding-bottom: 5px;
+    }
+}

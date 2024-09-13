@@ -1,4 +1,5 @@
-@import './../../../app/styles/vars.scss';
+@import '../../../app/styles/vars.scss';
+@import '../../../app/styles/media-queries.scss';
 
 .sectionTitleContainer {
     width: 100%;
@@ -6,9 +7,13 @@
     > h1 {
         font-family: $font-title;
         color: $white-color;
-
         font-size: 36px;
         line-height: 111%;
         letter-spacing: 1px;
+
+        @include mobile-l {
+            font-size: 30px; 
+            text-align: center;
+        }
     }
 }

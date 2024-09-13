@@ -108,11 +108,11 @@
 }
 
 .rotated {
-    transition: transform 1s;
-    transform: rotate(45deg);
+    transition: transform 0.5s;
+    transform: rotate(-45deg);
 }
 
 .reverseRotated {
-    transition: transform 1s;
+    transition: transform 0.5s;
     transform: rotate(-90deg);
 }

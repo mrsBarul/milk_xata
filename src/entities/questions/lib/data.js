@@ -24,7 +24,7 @@ const data = [
         title: 'How can I contact support if I have issues?',
         intro: 'If you encounter any issues or have questions, you can reach our support team through several channels:',
         answer: [
-            'Email: Send your inquiries to support@milkpad.com.',
+            'Email: Send your inquiries to support@PlayLife.com.',
             'Telegram: Contact us directly within the Telegram app for quick assistance.',
             'Social Media: Reach out to us via our official social media profiles for updates and support.'
         ],

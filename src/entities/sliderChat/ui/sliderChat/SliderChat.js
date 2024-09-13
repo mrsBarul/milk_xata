@@ -51,7 +51,7 @@ const SliderChat = () => {
     return(
         <Stack id="Home"  direction="column" className={styles.slaiderChatContainer}>
             <Stack justify="justifyBetween">
-                <SectionTitle justify={width <= 590 ? "justifyCenter" : "justifyStart"} text={'Chat on Milkapad'}/>
+                <SectionTitle justify={width <= 590 ? "justifyCenter" : "justifyStart"} text={'Chat on PlayLife'}/>
                 <Stack className={`${styles.buttonContainer} ${width <= 590 ? styles.containerNone : ''}`}>
                     <Button
                         variant="allow"
@@ -61,6 +61,7 @@ const SliderChat = () => {
                         <img
                             src={`${'/images/activPrev.svg'}`}
                             alt='prev'
+                            loading="lazy"
                             className={`${styles.buttonImage} ${currentIndex === 0 ? styles.disabledButton : ''}`}
                         />
                     </Button>
@@ -72,6 +73,7 @@ const SliderChat = () => {
                         <img
                             src={`${'/images/activNext.svg'}`}
                             alt='next'
+                            loading="lazy"
                             className={`${styles.buttonImage} ${currentIndex === maxIndex ? styles.disabledButton : ''}`}
                         />
                     </Button>
@@ -95,6 +97,7 @@ const SliderChat = () => {
                         <img
                             src={`${'/images/activPrev.svg'}`}
                             alt='prev'
+                            loading="lazy"
                             className={`${styles.buttonImage} ${currentIndex === 0 ? styles.disabledButton : ''}`}
                         />
                     </Button>
@@ -106,6 +109,7 @@ const SliderChat = () => {
                         <img
                             src={`${'/images/activNext.svg'}`}
                             alt='next'
+                            loading="lazy"
                             className={`${styles.buttonImage} ${currentIndex === maxIndex ? styles.disabledButton : ''}`}
                         />
                     </Button>

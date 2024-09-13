@@ -12,12 +12,12 @@ const SliderToolkitItem = ({ toolkitItem }) => {
                 <Title text={toolkitItem.header}/>
                 <p>{toolkitItem.description}</p>
                 <Button variant="primery">
-                    <a href="https://t.me/MilkPadBot" target="_blanck">Get Started</a>
+                    <a href="https://t.me/PlayLifeBot" target="_blanck">Get Started</a>
                 </Button>
             </Stack>
             <Stack>
-                <img src={`/images/${toolkitItem.poster_one}.png`} alt="skins poster"/>
-                <img src={`/images/${toolkitItem.poster_two}.png`} alt="ranking poster"/>
+                <img src={`/images/${toolkitItem.poster_one}.png`} loading="lazy" alt="skins poster"/>
+                <img src={`/images/${toolkitItem.poster_two}.png`} loading="lazy" alt="ranking poster"/>
             </Stack>
         </Stack>
     )

@@ -4,8 +4,8 @@ import styles from './Logo.module.scss'
 const Logo = () => {
     return(
         <Stack className={styles.logoContainer}>
-            <img src={`/images/logoMilkAi.svg`} alt="logo"/>
-            <p>MilkPad</p>
+            <img src={`/images/logoPlayLifeAi.svg`} rel="preload" alt="logo"/>
+            <p>PlayLife</p>
         </Stack>
     )
 }

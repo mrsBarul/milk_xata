@@ -10,7 +10,7 @@ const Header = () => {
                 <p>Discover customized chats on any topic tailored to your preferences.</p>
             </Stack>
             <Button variant="default">
-                <a href="https://t.me/MilkPadBot" target="_blanck">Get Started</a>
+                <a href="https://t.me/PlayLifeBot" target="_blanck">Get Started</a>
             </Button>
         </Stack>
     )
