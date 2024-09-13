@@ -1,10 +1,15 @@
 @import '../../app/styles/vars';
+@import '../../app/styles/media-queries';
 
 .privacyPolicyContainer {
     background-color: $background-color;
     color: $white-color-transparent;
     padding: 10px 100px 100px 100px;
     gap: 30px;
+
+    @include tablet-l {
+        padding: 10px;
+    }
 
     h1, h3 {
         color: $white-color;
