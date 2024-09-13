@@ -43,7 +43,7 @@
   ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#ffffff",
+  "theme_color": "#23163E",
   "background_color": "#23163E",
   "scope": "/",
   "orientation": "portrait",
