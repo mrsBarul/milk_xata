@@ -6,7 +6,6 @@
     padding: 10px;
     height: 100px;
     background-color: $footer-color;
-    border-bottom: 2px solid $footer-color;
 
     @include mobile-l {
         height: 182px;
