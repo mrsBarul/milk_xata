@@ -1,5 +1,5 @@
 import Stack from "../../../../../shared/ui/stack/Stack";
-import styles from './FooterItem.module.scss'
+import styles from './FooterItem.module.scss';
 
 const FooterItem = () => {
     return(
@@ -9,11 +9,11 @@ const FooterItem = () => {
             </Stack>
             <Stack direction="column" align="alignEnd">
                 <Stack>
-                    <a href="/terms_of_service" target="_blank">Terms of Service</a>
-                    <a href="/privacy_policy" target="_blank">Privacy Policy</a>
+                    <a href="/terms_of_service" target="_blank" rel="noreferrer">Terms of Service</a>
+                    <a href="/privacy_policy" target="_blank" rel="noreferrer">Privacy Policy</a>
                 </Stack>
                 <Stack>
-                    <p>support@PlayLife.ai</p>
+                    <a href="https://t.me/PlayLifeContactBot" target="_blank" rel="noreferrer">Support</a>
                 </Stack>
             </Stack>
         </Stack>
