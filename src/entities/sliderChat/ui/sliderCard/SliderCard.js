@@ -11,7 +11,7 @@ const SliderCard = ({ chatCard }) => {
                 <img src={`/images/${chatCard.title}.png`} loading="lazy" alt="poster of the chat on PlayLife"/>
                 <Stack className={styles.overlay}>
                     <Button variant="transparent">
-                        <a href="https://t.me/PlayLifeBot" target="_blanck">Lounch App</a>
+                        <a href="https://t.me/PlayLifeBot" target="_blanck">Launch App</a>
                     </Button>
                 </Stack>
             </Stack>

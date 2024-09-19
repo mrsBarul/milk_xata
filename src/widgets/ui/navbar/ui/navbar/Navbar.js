@@ -22,7 +22,7 @@ const Navbar = () => {
                 className={`${styles.navbar} ${isOpen ? styles.navbarOpen : ''}`}>
                     <Logo/>
                     <Button variant="default">
-                        <a href="https://t.me/PlayLifeBot" target="_blanck">Lounch App</a>
+                        <a href="https://t.me/PlayLifeBot" target="_blanck">Launch App</a>
                     </Button>
                     <Button onClick={handleMenuClick} variant="menu">
                         <img src={isOpen ? '/images/closeMenu.svg' : '/images/openMenu.svg'} alt="button's menu"/>
