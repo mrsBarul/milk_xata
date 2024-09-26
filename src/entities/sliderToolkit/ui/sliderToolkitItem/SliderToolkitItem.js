@@ -16,8 +16,8 @@ const SliderToolkitItem = ({ toolkitItem }) => {
                 </Button>
             </Stack>
             <Stack>
-                <img src={`/images/${toolkitItem.poster_one}.png`} loading="lazy" alt="skins poster"/>
-                <img src={`/images/${toolkitItem.poster_two}.png`} loading="lazy" alt="ranking poster"/>
+                <img src={`/images/${toolkitItem.poster_one}.svg`} loading="lazy" alt="skins poster"/>
+                <img src={`/images/${toolkitItem.poster_two}.svg`} loading="lazy" alt="ranking poster"/>
             </Stack>
         </Stack>
     )

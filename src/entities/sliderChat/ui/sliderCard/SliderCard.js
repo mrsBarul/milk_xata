@@ -8,7 +8,7 @@ const SliderCard = ({ chatCard }) => {
         <Stack className={styles.sliderCardContainer}
         direction="column">
             <Stack className={styles.chatPosterContainer}>
-                <img src={`/images/${chatCard.title}.png`} loading="lazy" alt="poster of the chat on PlayLife"/>
+                <img src={`/images/${chatCard.title}.svg`} loading="lazy" alt="poster of the chat on PlayLife"/>
                 <Stack className={styles.overlay}>
                     <Button variant="transparent">
                         <a href="https://t.me/PlayLifeBot" target="_blanck">Launch App</a>
