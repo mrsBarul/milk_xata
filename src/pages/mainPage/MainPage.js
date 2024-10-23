@@ -1,3 +1,4 @@
+import CookieBanner from '../../entities/cookieBanner/ui/CookieBanner';
 import Features from '../../entities/features/ui/features/Features';
 import Poster from '../../entities/poster/ui/poster/Poster';
 import Questions from '../../entities/questions/ui/questions/Questions';
@@ -29,6 +30,7 @@ const MainPage = () => {
                 <Poster/>
                 <Questions/>
                 <Footer/> 
+                <CookieBanner/>
             </Stack>
         </main>
     )

@@ -1,0 +1,65 @@
+@import '../../../app/styles/vars';
+@import '../../../app/styles/media-queries';
+
+.banner {
+    position: fixed;
+    height: 100%;
+    background-color: $footer-color;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 15px;
+    z-index: 9;
+
+    > div {
+        background-color: $cookie-color;
+        border-radius: 30px;
+        padding: 20px;
+        gap: 50px;
+        height: 200px;
+        width: 1117px;
+        z-index: 10;
+
+        @include tablet-l {
+            width: 800px; 
+        }
+    
+        @include tablet-m {
+            gap: 20px;
+            width: 590px;
+        }
+    
+        @include mobile-l {
+            height: 182px;
+            width: 335px; 
+        }
+    
+        @include mobile-m {
+            width: 300px; 
+        }
+
+        p {
+            text-align: left;
+            color: $white-color-transparent;
+            font-family: $font-subTitle;
+            line-height: 40px;
+            font-size: 24px; 
+            letter-spacing: 1px;
+
+            @include tablet-m {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+
+        a {
+            font-family: $font-title;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    }
+
+
+

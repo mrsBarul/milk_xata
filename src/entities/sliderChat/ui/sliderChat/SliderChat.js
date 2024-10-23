@@ -81,7 +81,6 @@ const SliderChat = () => {
             </Stack>
             <Stack ref={carouselRef}
             justify="justifyStart" align="alignStart" 
-            className={styles.sliderTrack}
             style={{ overflowX: 'hidden', display: 'flex' }}>
                 {dataChat.map((chatCard, key) => (
                     <SliderCard key={key} chatCard={chatCard}/>
